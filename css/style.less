@@ -13,6 +13,34 @@ body {
     
 }
 
+h3 {
+    font-size: 3rem;
+    
+    margin: 0;
+}
+
+p {
+    font-size: 1.1rem;
+    color: @second;
+    line-height: 1.3
+}
+
+button {
+    height: 2.7rem;
+    padding: 0.8rem 1.5rem;
+    border: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .2s linear;
+
+    &:hover {
+        background-color: @second;
+        transition: .2s linear;
+    }
+}
+
+
 /*Blocks*/
 @import "blocks/header";
 @import "blocks/home";
+@import "blocks/about";
