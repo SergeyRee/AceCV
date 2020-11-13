@@ -241,7 +241,7 @@ body {
   .home__img {
     position: absolute;
     bottom: 25%;
-    right: -50%;
+    right: 0%;
   }
 }
 .home svg path {
