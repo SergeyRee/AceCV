@@ -1,12 +1,16 @@
 /*colors*/
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: #fafafa;
   color: #515769;
 }
 .container {
-  max-width: 1140px;
-  padding: 0 ;
-  margin: 0 20px;
+  padding: 0 20px;
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 h3 {
   font-size: 3rem;
@@ -32,24 +36,19 @@ button:hover {
 }
 /*Blocks*/
 /* HEADER */
-.header .container {
+.header {
   position: fixed;
-  z-index: 1000;
-  margin: 0 auto;
-  height: 3.5rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
   background-color: #ffffff;
+  padding: 13px 0;
 }
 .header__inner {
-  width: 100%;
-  display: flex;
-}
-.header__wrapper {
-  position: relative;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 1rem;
 }
 .header .nav {
   display: flex;
@@ -143,6 +142,12 @@ button:hover {
   color: #fff;
 }
 /* Burger Icon*/
+header button {
+  background: transparent;
+}
+header button:hover {
+  background: transparent;
+}
 .menu-toggle {
   justify-content: center;
   align-items: center;
@@ -156,7 +161,7 @@ button:hover {
   }
 }
 .menu-icon {
-  position: relative;
+  position: absolute;
   height: 5px;
   width: 30px;
   background-color: #515769;

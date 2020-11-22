@@ -2,26 +2,18 @@
 
 /* HEADER */
 .header{
-    .container {
-        position: fixed;
-        z-index: 1000;
-        margin: 0 auto;
-        height: 3.5rem;
-        background-color: rgb(255, 255, 255);
-    }
-
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    background-color: rgb(255, 255, 255);
+    padding: 13px 0;
+    
     &__inner{
-        width: 100%;
-        display: flex;
-    }
-
-    &__wrapper {
-        position: relative;
-        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 0 1rem;
     }
 
     .nav {
@@ -131,6 +123,15 @@
 }
 
 /* Burger Icon*/
+
+header button {
+    background: transparent;
+}
+
+header button:hover {
+    background: transparent;
+}
+
 .menu-toggle{
     justify-content: center;
     align-items: center;
@@ -143,7 +144,7 @@
 }
 
 .menu-icon{
-    position: relative;
+    position: absolute;
     height: 5px;
     width: 30px;
     background-color: @primary;

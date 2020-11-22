@@ -11,40 +11,40 @@
 
 <body>
     <!-- HEADER -->
-    <header class="header">
-        <div class="container header__inner">
-            <div class="header__wrapper">
-            <div class="logo">
-                <img src="img/logo.png" alt="logo">
+    <section class="section-header">
+        <header class="header">
+            <div class="container header__inner">
+                <div class="logo">
+                    <img src="img/logo.png" alt="logo">
+                </div>
+                <nav>
+                    <ul class="nav">
+                        <li class="nav__item"><a href="#" class="nav__link-active">Home</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Experience</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                    </ul>
+                </nav>
+                <button id="menu-toggle" type="button" class="menu-toggle">
+                    <div class="menu-icon"></div>
+                </button>
             </div>
-            <nav>
-                <ul class="nav">
-                    <li class="nav__item"><a href="#" class="nav__link-active">Home</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Experience</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Work</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
-                </ul>
-            </nav>
-            <div id="menu-toggle" class="menu-toggle">
-                <div class="menu-icon"></div>
+            <div class="mobile-nav-overlay">
+                <nav id="mobile-nav" class="mobile-nav">
+                    <div class="nav">
+                        <li class="nav__item_mobile"><a href="#" class="nav__link-active">Home</a></li>
+                        <li class="nav__item_mobile"><a href="#" class="nav__link">About</a></li>
+                        <li class="nav__item_mobile"><a href="#" class="nav__link">Experience</a></li>
+                        <li class="nav__item_mobile"><a href="#" class="nav__link">Work</a></li>
+                        <li class="nav__item_mobile"><a href="#" class="nav__link">Contact</a></li>
+                    </div>
+                </nav>
             </div>
-        </div>
-        </div>
-        <div class="mobile-nav-overlay"></div>
-        <nav id="mobile-nav" class="mobile-nav">
-            <div class="nav">
-                <div class="nav__item_mobile"><a href="#" class="nav__link-active">Home</a></div>
-                <div class="nav__item_mobile"><a href="#" class="nav__link">About</a></div>
-                <div class="nav__item_mobile"><a href="#" class="nav__link">Experience</a></div>
-                <div class="nav__item_mobile"><a href="#" class="nav__link">Work</a></div>
-                <div class="nav__item_mobile"><a href="#" class="nav__link">Contact</a></div>
-            </div>
-        
-        </nav>
-    </div>
-    </header>
+        </header>
+    </section>
     <!-- HOME -->
+    <section class="section-home">
     <div class="home">
         <div class="container home__inner">
             <div class="home__info">
@@ -158,7 +158,9 @@
             </div>
         </div>
     </div>
+    </section>
     <!-- ABOUT -->
+    <section class="section-about">
     <div id="a2" class="about">
         <div class="container about__inner">
             <div class="about__img">
@@ -200,6 +202,7 @@
             </div>
         </div>
     </div>
+</section>
     <script src="js/script.js"></script>
 </body>
 
