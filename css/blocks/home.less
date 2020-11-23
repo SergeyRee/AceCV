@@ -18,7 +18,7 @@
         @media (max-width: 618px) {
             margin: 2rem 1rem;   
         }
-        .name{
+        .name {
             font-size: 5rem;
             line-height: 0.95;
             margin: 0;
@@ -79,7 +79,7 @@
         }
     }
 
-    &__img {
+    img {
         margin: 3rem 0 0 0 ;
         padding: 3rem 0 0 0 ;
         overflow: hidden;
@@ -88,23 +88,25 @@
             width: 230px;
         }
 
+        @media (max-width: 618px) {
+            position: absolute;
+            bottom: -38%;
+            right: 0%;
+            z-index: -5;
+        }
+
         @media (max-width: 415px) {
             width: 180px;
         }
 
 
-        img {
-            @media (max-width: 618px) {
-                width: 100%;
-            }
-        }
+        // img {
+        //     @media (max-width: 618px) {
+        //         width: 100%;
+        //     }
+        // }
         
-        @media (max-width: 618px) {
-            position: absolute;
-            bottom: 38%;
-            right: 0%;
-            z-index: -5;
-        }
+        
     }
 
     svg path {

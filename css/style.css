@@ -273,32 +273,27 @@ header button:hover {
 .home ul .social__item:hover::before {
   background-color: #515769;
 }
-.home__img {
+.home img {
   margin: 3rem 0 0 0 ;
   padding: 3rem 0 0 0 ;
   overflow: hidden;
 }
 @media (max-width: 686px) {
-  .home__img {
+  .home img {
     width: 230px;
   }
 }
-@media (max-width: 415px) {
-  .home__img {
-    width: 180px;
-  }
-}
 @media (max-width: 618px) {
-  .home__img img {
-    width: 100%;
-  }
-}
-@media (max-width: 618px) {
-  .home__img {
+  .home img {
     position: absolute;
-    bottom: 38%;
+    bottom: -38%;
     right: 0%;
     z-index: -5;
+  }
+}
+@media (max-width: 415px) {
+  .home img {
+    width: 180px;
   }
 }
 .home svg path {
