@@ -6,6 +6,9 @@ body {
   background-color: #fafafa;
   color: #515769;
 }
+section {
+  margin: 6rem 0;
+}
 .container {
   padding: 0 20px;
   width: 1200px;
@@ -15,6 +18,10 @@ body {
 h3 {
   font-size: 3rem;
   margin: 0;
+}
+h5 {
+  font-size: 23px;
+  margin: 1rem 0;
 }
 p {
   font-size: 1.1rem;
@@ -106,6 +113,7 @@ button:hover {
   width: 10px;
   height: 3px;
   background-color: #57cbe8;
+  display: block;
 }
 .header .nav__link-active:hover::before {
   color: #57cbe8;
@@ -139,7 +147,7 @@ button:hover {
   color: #fff;
 }
 .header .mobile-nav-active .nav__link-active {
-  color: #fff;
+  color: #57cbe8;
 }
 /* Burger Icon*/
 header button {
@@ -374,5 +382,29 @@ header button:hover {
   height: 3px;
   width: 87%;
   background-color: #57cbe8;
+}
+/* EXPERIENCE */
+.experience__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.experience__item {
+  padding: 2rem 2rem;
+  max-width: 25%;
+}
+@media (max-width: 938px) {
+  .experience__item {
+    max-width: 50%;
+  }
+}
+@media (max-width: 482px) {
+  .experience__item {
+    max-width: 100%;
+    padding: 1rem 2rem;
+  }
+}
+.experience__icon {
+  height: 2rem;
+  width: auto;
 }
 /*# sourceMappingURL=./style.css.map */

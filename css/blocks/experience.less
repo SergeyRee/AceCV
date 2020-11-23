@@ -1,0 +1,30 @@
+// main: ../style.less
+
+/* EXPERIENCE */
+.experience {
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        padding: 2rem 2rem;
+        max-width:25%;
+
+        @media (max-width: 938px) {
+            max-width: 50%;
+        }
+        @media (max-width: 482px) {
+            max-width: 100%;
+            padding: 1rem 2rem;
+        }
+    }
+
+    &__icon {
+        height: 2rem;
+        width: auto;
+    }
+
+    
+}
