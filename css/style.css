@@ -284,8 +284,6 @@ header button:hover {
   background-color: #515769;
 }
 .home img {
-  margin: 3rem 0 0 0;
-  padding: 3rem 0 0 0;
   overflow: hidden;
 }
 @media (max-width: 686px) {
@@ -296,7 +294,7 @@ header button:hover {
 @media (max-width: 618px) {
   .home img {
     position: absolute;
-    bottom: -28%;
+    bottom: 28%;
     right: 0%;
     z-index: -5;
   }
