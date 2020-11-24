@@ -491,8 +491,12 @@ header button:hover {
 }
 /* /WORK*/
 /* CONTACTS */
-.contacts .contacts__title {
-  width: 650px;
+.contacts {
+  background-color: #f3f3f3;
+}
+.contacts__title {
+  max-width: 650px;
+  margin-left: 2rem;
 }
 .contacts__wrapper {
   display: flex;
@@ -526,4 +530,22 @@ header button:hover {
   }
 }
 /* /CONTACTS */
+/* FOOTER */
+.footer {
+  height: 3rem;
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__logo {
+  margin: auto 2rem;
+}
+.footer p {
+  margin: auto 2rem;
+}
+.footer strong {
+  color: #515769;
+}
+/* /FOOTER */
 /*# sourceMappingURL=./style.css.map */
