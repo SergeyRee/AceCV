@@ -16,22 +16,25 @@
         width: 16rem;
 
         @media (max-width: 618px) {
-            margin: 2rem 1rem;   
+            margin: 2rem 1rem;
         }
+
         .name {
             font-size: 5rem;
             line-height: 0.95;
             margin: 0;
+
             @media (max-width: 618px) {
-                font-size: 3rem;  
+                font-size: 3rem;
             }
         }
-        
+
         p {
             font-size: 1.5rem;
             color: @second;
+
             @media (max-width: 618px) {
-                font-size: 1rem;  
+                font-size: 1rem;
             }
         }
     }
@@ -42,7 +45,7 @@
         padding: 0;
 
         @media (max-width: 618px) {
-            display: block;  
+            display: block;
         }
 
         .social__item {
@@ -50,47 +53,50 @@
             height: 25px;
             width: 25px;
             margin-right: 25px;
+
             @media (max-width: 618px) {
-                margin-top: 22px;  
+                margin-top: 22px;
             }
         }
+
         .social__item:last-child {
             height: 20px;
             width: 20px;
             margin-right: 0px;
         }
-        .social__item:hover {
-            
-        }
+
+        .social__item:hover {}
+
         .social__item::before {
             content: '';
             position: absolute;
-            top: -27%;
+            top: -30%;
             left: -30%;
             z-index: -1;
             height: 40px;
             width: 40px;
             margin-right: 33px;
-            background-color: #fff; 
+            background-color: #fff;
             border-radius: 20px;
         }
+
         .social__item:hover::before {
             background-color: @primary;
         }
     }
 
     img {
-        margin: 3rem 0 0 0 ;
-        padding: 3rem 0 0 0 ;
+        margin: 3rem 0 0 0;
+        padding: 3rem 0 0 0;
         overflow: hidden;
-        
+
         @media (max-width: 686px) {
             width: 230px;
         }
 
         @media (max-width: 618px) {
             position: absolute;
-            bottom: -38%;
+            bottom: -28%;
             right: 0%;
             z-index: -5;
         }
@@ -98,23 +104,17 @@
         @media (max-width: 415px) {
             width: 180px;
         }
-
-
-        // img {
-        //     @media (max-width: 618px) {
-        //         width: 100%;
-        //     }
-        // }
-        
-        
     }
 
     svg path {
-        fill:inherit;
-        stroke:inherit;
-        stroke-width:inherit;
-        }
+        fill: inherit;
+        stroke: inherit;
+        stroke-width: inherit;
+    }
+
     .social__icon:hover {
         fill: #fff;
     }
 }
+
+/* /HOME */

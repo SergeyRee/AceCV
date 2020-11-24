@@ -1,0 +1,43 @@
+// main: ../style.less
+
+/* CONTACTS */
+.contacts {
+    
+    .contacts__title {
+        width: 650px;
+    }
+
+    &__wrapper {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    &__item {
+        padding: 2rem;
+        width: calc(100%/4);
+
+        @media (max-width: 862px) {
+            padding: 0.5rem;
+            h5 {
+                font-size: 18px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 603px) {
+            min-width: 50%;
+            h5 {
+                font-size: 18px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+/* /CONTACTS */

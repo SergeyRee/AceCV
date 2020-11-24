@@ -1,7 +1,7 @@
 // main: ../style.less
 
 /* HEADER */
-.header{
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -9,8 +9,8 @@
     z-index: 5;
     background-color: rgb(255, 255, 255);
     padding: 13px 0;
-    
-    &__inner{
+
+    &__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -106,15 +106,17 @@
         text-align: center;
         background-color: rgba(0, 0, 0, 0.822);
 
-        .nav{
+        .nav {
             display: inline-block;
 
-            &__item_mobile{
+            &__item_mobile {
                 margin-bottom: 1rem;
             }
+
             &__link {
                 color: #fff;
             }
+
             &__link-active {
                 color: @tuerkis;
             }
@@ -122,9 +124,12 @@
     }
 }
 
+/* /HEADER */
+
 /* Burger Icon*/
 
 header button {
+    margin-right: -10px;
     background: transparent;
 }
 
@@ -132,25 +137,26 @@ header button:hover {
     background: transparent;
 }
 
-.menu-toggle{
+.menu-toggle {
     justify-content: center;
     align-items: center;
     height: 30px;
     width: 30px;
     display: none;
+
     @media (max-width: 850px) {
         display: flex;
     }
 }
 
-.menu-icon{
+.menu-icon {
     position: absolute;
     height: 5px;
     width: 30px;
     background-color: @primary;
 }
 
-.menu-icon::before{
+.menu-icon::before {
     content: '';
     display: block;
     position: absolute;
@@ -162,7 +168,7 @@ header button:hover {
     background-color: @primary;
 }
 
-.menu-icon::after{
+.menu-icon::after {
     content: '';
     display: block;
     position: absolute;
@@ -172,4 +178,6 @@ header button:hover {
     height: 5px;
     width: 30px;
     background-color: @primary;
-} 
+}
+
+/* /Burger Icon*/

@@ -1,6 +1,6 @@
 // main: ../style.less
 
-/* HOME */
+/* WORK */
 .work {
     &__title {
         max-width: 700px;
@@ -10,11 +10,16 @@
     &__wrapper {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     &__item {
         max-width: 30%;
-        margin: 0 1rem;
+        margin: 1rem 1rem;
+
+        @media (max-width: 1009px) {
+            min-width: 45%;
+        }
 
         @media (max-width: 600px) {
             max-width: 100%;
@@ -60,4 +65,4 @@
     }
 }
 
-/* /HOME */
+/* /WORK*/
