@@ -490,6 +490,7 @@ header button:hover {
 /* /WORK*/
 /* CONTACTS */
 .contacts {
+  padding-top: 2rem ;
   background-color: #f3f3f3;
 }
 .contacts__title {
@@ -507,7 +508,7 @@ header button:hover {
 }
 @media (max-width: 862px) {
   .contacts__item {
-    padding: 0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 2rem;
   }
   .contacts__item h5 {
     font-size: 18px;
