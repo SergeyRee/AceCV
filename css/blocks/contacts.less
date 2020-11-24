@@ -2,8 +2,12 @@
 
 /* CONTACTS */
 .contacts {
-    padding-top: 2rem ;
+    padding-top: 12rem ;
     background-color: #f3f3f3;
+
+    @media (max-width: 862px) {
+        padding-top: 2rem ;
+    }
 
     &__title {
         max-width: 650px;
@@ -20,6 +24,11 @@
     &__item {
         padding: 2rem;
         width: calc(100%/4);
+        
+        p:hover {
+            color: @tuerkis;
+            transition: color .2s;
+        }
 
         @media (max-width: 862px) {
             padding: 0.5rem 0.5rem 0.5rem 2rem ;

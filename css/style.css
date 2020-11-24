@@ -48,6 +48,9 @@ button:hover {
   background-color: #a6a7aa;
   transition: 0.2s linear;
 }
+.modal-open {
+  overflow: hidden;
+}
 /*Blocks*/
 /* HEADER */
 .header {
@@ -57,7 +60,6 @@ button:hover {
   width: 100%;
   z-index: 5;
   background-color: #ffffff;
-  padding: 13px 0;
 }
 .header__inner {
   display: flex;
@@ -156,6 +158,22 @@ button:hover {
 .header .mobile-nav-active .nav__link-active {
   color: #57cbe8;
 }
+.header .nav__item__mobile {
+  padding-bottom: 1rem;
+}
+.no-scroll {
+  padding: 0.9em 0;
+  transition: padding 0.2s;
+}
+.scroll {
+  padding: 0.4rem 0;
+  transition: padding 0.2s;
+}
+@media (max-width: 846px) {
+  .scroll {
+    padding: 0.8rem 0;
+  }
+}
 /* /HEADER */
 /* Burger Icon*/
 header button {
@@ -220,7 +238,7 @@ header button:hover {
 }
 @media (max-width: 618px) {
   .home__info {
-    margin: 2rem 1rem;
+    margin: 2rem 0rem;
   }
 }
 .home__info .name {
@@ -295,7 +313,7 @@ header button:hover {
   .home img {
     position: absolute;
     bottom: 28%;
-    right: 0%;
+    right: 8%;
     z-index: -5;
   }
 }
@@ -339,7 +357,7 @@ header button:hover {
 }
 @media (max-width: 845px) {
   .about__info {
-    margin-left: 1rem;
+    margin-left: 0rem;
   }
   .about__info h3 {
     font-size: 2rem;
@@ -387,13 +405,14 @@ header button:hover {
   width: 87%;
   background-color: #57cbe8;
 }
+/* /ABOUT */
 /* EXPERIENCE */
 .experience__wrapper {
   display: flex;
   flex-wrap: wrap;
 }
 .experience__item {
-  padding: 2rem 2rem;
+  padding: 2rem 1rem;
   max-width: 25%;
 }
 @media (max-width: 938px) {
@@ -414,7 +433,7 @@ header button:hover {
 /* /EXPERIENCE */
 /* PARTNERS */
 .partners {
-  background: #eeeeee;
+  background: #f1f1f1;
 }
 .partners__wrapper {
   padding-top: 2rem;
@@ -490,8 +509,13 @@ header button:hover {
 /* /WORK*/
 /* CONTACTS */
 .contacts {
-  padding-top: 2rem ;
+  padding-top: 12rem ;
   background-color: #f3f3f3;
+}
+@media (max-width: 862px) {
+  .contacts {
+    padding-top: 2rem ;
+  }
 }
 .contacts__title {
   max-width: 650px;
@@ -505,6 +529,10 @@ header button:hover {
 .contacts__item {
   padding: 2rem;
   width: calc(100%/4);
+}
+.contacts__item p:hover {
+  color: #57cbe8;
+  transition: color 0.2s;
 }
 @media (max-width: 862px) {
   .contacts__item {
@@ -532,6 +560,7 @@ header button:hover {
 /* FOOTER */
 .footer {
   height: 3rem;
+  margin-bottom: 2rem;
 }
 .footer__wrapper {
   display: flex;

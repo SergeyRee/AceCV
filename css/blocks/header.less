@@ -8,8 +8,7 @@
     width: 100%;
     z-index: 5;
     background-color: rgb(255, 255, 255);
-    padding: 13px 0;
-
+    
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -121,6 +120,24 @@
                 color: @tuerkis;
             }
         }
+    }
+
+    .nav__item__mobile {
+        padding-bottom: 1rem;
+    }
+}
+
+.no-scroll {
+    padding: 0.9em 0;
+    transition: padding .2s;
+}
+
+.scroll {
+    padding: 0.4rem 0;
+    transition: padding .2s;
+
+    @media (max-width: 846px) {
+        padding: 0.8rem 0;
     }
 }
 
